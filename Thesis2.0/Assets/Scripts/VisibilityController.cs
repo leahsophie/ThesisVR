@@ -5,9 +5,6 @@ using UnityEngine.Events;
 
 public class VisibilityController : MonoBehaviour
 {
-
-    public UnityEvent probandFinsih;
-
     // Nixcht gezeigte Chars
     private List<Transform> show;
 
@@ -15,36 +12,57 @@ public class VisibilityController : MonoBehaviour
     private int charCount;
     private int randCharNum;
 
-    [SerializeField]
     public List<string> EmotionStings;
 
     [SerializeField]
     int SecondsToWait = 1;
 
+    public int sessionCount = 0;
+    bool first = true;
 
-    void Awake()
+    private void Start()
     {
 
-    }
-
-    void Start()
-    {
+        // Liste für Kinder anlegen
         show = new List<Transform>();
 
+        // Alle Kinder unsichtbar schalten 
         foreach (Transform child in transform)
         {
             show.Add(child);
             child.gameObject.SetActive(false);
         }
+    }
 
-        randCharNum = show.Count;
-        StartCoroutine(ChangeVisibleCharacter());
+    private void Update()
+    {
+
+        if (sessionCount < 1)
+        {
+            first = false;
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Return))
+        {
+
+            show = new List<Transform>();
+
+            foreach (Transform child in transform)
+            {
+                show.Add(child);
+                child.gameObject.SetActive(false);
+            }
+
+            // Anzahl der Kinder
+            randCharNum = show.Count;
+            
+            StartCoroutine(ChangeVisibleCharacter());
+        }
     }
 
     IEnumerator ChangeVisibleCharacter()
     {
-
-        //print("-----------new--------------");
         randCharNum = Random.Range(0, show.Count - 1);
 
         if (show.Count != 0)
@@ -56,10 +74,6 @@ public class VisibilityController : MonoBehaviour
 
             // Emotionen zur Liste hinzufügen
             EmotionStings.Add(show[randCharNum].transform.gameObject.name);
-
-
-
-            //print("Removed: " + show[randCharNum].transform.gameObject.name);
             show.RemoveAt(randCharNum);
 
             StopCoroutine(ChangeVisibleCharacter());
@@ -69,8 +83,9 @@ public class VisibilityController : MonoBehaviour
         else
         {
             //proband ist fertig
-            print("Fertig");
-            GetComponent<CSVController>().WriteProband();
+            StopCoroutine(ChangeVisibleCharacter());
+            GetComponent<CSVController>().WriteCSV();
+            EmotionStings.Clear();
             yield return null;
         }
     }
