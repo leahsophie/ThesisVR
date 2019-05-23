@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class VisibilityController : MonoBehaviour
 {
+
+    public UnityEvent probandFinsih;
 
     // Nixcht gezeigte Chars
     private List<Transform> show;
@@ -11,6 +14,9 @@ public class VisibilityController : MonoBehaviour
     // Anzahl Charaktere
     private int charCount;
     private int randCharNum;
+
+    [SerializeField]
+    public List<string> EmotionStings;
 
     [SerializeField]
     int SecondsToWait = 1;
@@ -44,16 +50,16 @@ public class VisibilityController : MonoBehaviour
         if (show.Count != 0)
         {
 
-            //foreach (Transform t in show)
-            //{
-            //    print(show.Count + " : " + t.name +" : " + randCharNum);
-            //}
-
             show[randCharNum].transform.gameObject.SetActive(true);
             yield return new WaitForSeconds(SecondsToWait);
             show[randCharNum].transform.gameObject.SetActive(false);
 
-            print("Removed: " + show[randCharNum].transform.gameObject.name);
+            // Emotionen zur Liste hinzufügen
+            EmotionStings.Add(show[randCharNum].transform.gameObject.name);
+
+
+
+            //print("Removed: " + show[randCharNum].transform.gameObject.name);
             show.RemoveAt(randCharNum);
 
             StopCoroutine(ChangeVisibleCharacter());
@@ -62,6 +68,9 @@ public class VisibilityController : MonoBehaviour
         }
         else
         {
+            //proband ist fertig
+            print("Fertig");
+            GetComponent<CSVController>().WriteProband();
             yield return null;
         }
     }
