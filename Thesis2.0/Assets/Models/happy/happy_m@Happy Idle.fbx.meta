@@ -165,7 +165,7 @@ ModelImporter:
     4300008: Hair
     4300010: Bottoms
     4300012: Shoes
-    7400000: mixamo.com
+    7400000: Happy Idle
     9500000: //RootNode
     13700000: Body
     13700002: Bottoms
@@ -179,27 +179,27 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Bodymat
-    second: {fileID: 2100000, guid: 04da4b0f0e9ac6e48a3432b189e2fc73, type: 2}
+    second: {fileID: 2100000, guid: 8a1daa698bf18e241920cd39aa54bcfe, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Bottommat
-    second: {fileID: 2100000, guid: eba0f4b931baf89479821621d3ed8d00, type: 2}
+    second: {fileID: 2100000, guid: 6e0148c2238a6e244bbd4656033ba658, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Hairmat
-    second: {fileID: 2100000, guid: 1a50694b0e64d6444badd835c8fbb3ad, type: 2}
+    second: {fileID: 2100000, guid: 6b8a2ccb4e376764e93ccefbf7f0fcd4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Shoesmat
-    second: {fileID: 2100000, guid: 9fe938a24c77e794787054730952cf6b, type: 2}
+    second: {fileID: 2100000, guid: 39ccd79632e7ecc4182fc8f4ed8c753d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Topmat
-    second: {fileID: 2100000, guid: c9372c22dee993e4aa6cc9c9fb0c2116, type: 2}
+    second: {fileID: 2100000, guid: 6e099fa59e35c9a4aba249fb0872fbb1, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -226,7 +226,35 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Happy Idle
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 936f47f5f2b7e0a49845ab4667faad3f
+guid: e51de436b40af94479864eed018eed4e
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -7,8 +7,8 @@ ModelImporter:
     100002: Bottoms
     100004: default
     100006: Eyelashes
-    100008: Hair
-    100010: //RootNode
+    100008: //RootNode
+    100010: Hair
     100012: mixamorig:Head
     100014: mixamorig:HeadTop_End
     100016: mixamorig:Hips
@@ -82,8 +82,8 @@ ModelImporter:
     400002: Bottoms
     400004: default
     400006: Eyelashes
-    400008: Hair
-    400010: //RootNode
+    400008: //RootNode
+    400010: Hair
     400012: mixamorig:Head
     400014: mixamorig:HeadTop_End
     400016: mixamorig:Hips
@@ -154,17 +154,17 @@ ModelImporter:
     400146: Shoes
     400148: Tops
     2100000: Bodymat
-    2100002: Topmat
-    2100004: Shoesmat
-    2100006: Bottommat
-    2100008: Hairmat
-    4300000: default
-    4300002: Eyelashes
+    2100002: Shoesmat
+    2100004: Bottommat
+    2100006: Hairmat
+    2100008: Topmat
+    4300000: Eyelashes
+    4300002: default
     4300004: Body
-    4300006: Tops
-    4300008: Shoes
-    4300010: Bottoms
-    4300012: Hair
+    4300006: Shoes
+    4300008: Bottoms
+    4300010: Hair
+    4300012: Tops
     7400000: mixamo.com
     9500000: //RootNode
     13700000: Body
@@ -179,157 +179,32 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Bodymat
-    second: {fileID: 2100000, guid: ad2b75fc90e429a40b6c1f1d8b24297b, type: 2}
+    second: {fileID: 2100000, guid: a0102102b453e7a4da0457b8adc583ba, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Bottommat
-    second: {fileID: 2100000, guid: ba0d1bf07b633734abe22d1ed9e0323a, type: 2}
+    second: {fileID: 2100000, guid: 8120e52e775ce974b9b3b99f85b61ae5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Hairmat
-    second: {fileID: 2100000, guid: afbe304fa387031449d194c9937b7afe, type: 2}
+    second: {fileID: 2100000, guid: f900e1ce33fb8064db680402fe378df4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Shoesmat
-    second: {fileID: 2100000, guid: ac95666411febbf4b82360f15e17e11f, type: 2}
+    second: {fileID: 2100000, guid: 63383cbef8c8ea5488ccacdecd8ae890, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Topmat
-    second: {fileID: 2100000, guid: f5d0062e04e303f42954fa5069f384ab, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: glcklich_w_Body_Diffuse
-    second: {fileID: 2800000, guid: e7c1668809dfb8c4d8c69fdd430b0a4e, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: glcklich_w_Body_Gloss
-    second: {fileID: 2800000, guid: b7e3c7e25fee58f4f9e9889daf88a31e, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: glcklich_w_Body_Normal
-    second: {fileID: 2800000, guid: ba70e1500cc810247ba916b83ca56f4f, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: glcklich_w_Body_Opacity
-    second: {fileID: 2800000, guid: 817717dfe8db3fa458c2d442df1a1433, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: glcklich_w_Body_Specular
-    second: {fileID: 2800000, guid: 7471a205db432de4685f218e6a254744, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: glcklich_w_Bottom_Diffuse
-    second: {fileID: 2800000, guid: 6ff8044f21124c5489667e676204c670, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: glcklich_w_Bottom_Gloss
-    second: {fileID: 2800000, guid: d5cd2750c0225af4b96673eb893f9b1d, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: glcklich_w_Bottom_Normal
-    second: {fileID: 2800000, guid: f0eca3e2aeb204a428fcccde82df559b, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: glcklich_w_Bottom_Opacity
-    second: {fileID: 2800000, guid: 2eab9ed26fdff8845bff5f8f873682b3, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: glcklich_w_Bottom_Specular
-    second: {fileID: 2800000, guid: 5e7169a962536e04cb596232e6e6b15a, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: glcklich_w_Hair_Diffuse
-    second: {fileID: 2800000, guid: 327643eb35bfb7045ab14d3299f3993c, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: glcklich_w_Hair_Gloss
-    second: {fileID: 2800000, guid: ea5212bbbf373a84db68709a64224d66, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: glcklich_w_Hair_Normal
-    second: {fileID: 2800000, guid: 56ac59eaa8317b848b8a17040da1cb81, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: glcklich_w_Hair_Opacity
-    second: {fileID: 2800000, guid: 7d7bc5a407cf22140a20224d6169f69b, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: glcklich_w_Hair_Specular
-    second: {fileID: 2800000, guid: e91b3d02e839683468e62ae1040fbb26, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: glcklich_w_Shoes_Diffuse
-    second: {fileID: 2800000, guid: bd4e272c2332a414e80cbcef7632425d, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: glcklich_w_Shoes_Gloss
-    second: {fileID: 2800000, guid: bfbffbf081ab9bb4a96ec94f9e41a912, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: glcklich_w_Shoes_Normal
-    second: {fileID: 2800000, guid: 56c584cf396bf8947a16c6f682f45b94, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: glcklich_w_Shoes_Opacity
-    second: {fileID: 2800000, guid: 691b0223043f9954a8772f48889d34ac, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: glcklich_w_Shoes_Specular
-    second: {fileID: 2800000, guid: dc604359632e3f94290c3f07c9c59ba7, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: glcklich_w_Top_Diffuse
-    second: {fileID: 2800000, guid: a5316a96b768e764badb9f275317ba0a, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: glcklich_w_Top_Gloss
-    second: {fileID: 2800000, guid: cb32768935ea5e14883b533258d1f104, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: glcklich_w_Top_Normal
-    second: {fileID: 2800000, guid: 2ce27c888ccdf474e8595eefa3ef0bf8, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: glcklich_w_Top_Opacity
-    second: {fileID: 2800000, guid: f1ce9e68248d49b42b7d5b181cf4796f, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: glcklich_w_Top_Specular
-    second: {fileID: 2800000, guid: f676d2bcdc5722d4b8391947f9b39944, type: 3}
+    second: {fileID: 2100000, guid: ad05e408b2b02cf4a94bd8b918b62f61, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
