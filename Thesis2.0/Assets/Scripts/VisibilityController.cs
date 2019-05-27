@@ -17,9 +17,6 @@ public class VisibilityController : MonoBehaviour
     [SerializeField]
     int SecondsToWait = 1;
 
-    public int sessionCount = 0;
-    bool first = true;
-
     private void Start()
     {
 
@@ -36,13 +33,6 @@ public class VisibilityController : MonoBehaviour
 
     private void Update()
     {
-
-        if (sessionCount < 1)
-        {
-            first = false;
-        }
-
-
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Return))
         {
 
@@ -52,6 +42,7 @@ public class VisibilityController : MonoBehaviour
             {
                 show.Add(child);
                 child.gameObject.SetActive(false);
+
             }
 
             // Anzahl der Kinder

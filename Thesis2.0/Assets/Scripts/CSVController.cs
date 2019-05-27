@@ -14,20 +14,29 @@ public class CSVController : MonoBehaviour
 
         string emotionString =  "";
 
+        foreach(string s in newProband.Emotionen)
+        {
+           /// print(s);
+        }
+
+
         // String erstellen
         for (int i = 0; i < newProband.Emotionen.Count; i++)
         {
-            emotionString = newProband.Emotionen[i] + ";" + emotionString;
+            emotionString = emotionString + ";" + newProband.Emotionen[i];
+
         }
 
         // Datei schreiben
         // Anzahl der Bisherigen Probanden
         string fileData = File.ReadAllText("assets/resources/csv/probandendaten.csv");
         String[] lines = fileData.Split("\n"[0]);
+        
         //Datei zum Schreiben Öffnen
         StreamWriter sw = new StreamWriter("assets/resources/csv/probandendaten.csv",true);
         sw.WriteLine(String.Format(lines.Length + ";" + emotionString));
         Debug.Log(String.Format(lines.Length + ";" + emotionString));
+
         sw.Flush();
         sw.Close();
 
