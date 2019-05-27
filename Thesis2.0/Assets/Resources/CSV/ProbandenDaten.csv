@@ -1,2 +1,6 @@
 1;;angry;happy;sad;tired
 2;;happy;sad;angry;tired
+3;;angry;sad;happy;tired
+4;;happy;sad;angry;tired
+5;;happy_female;happy_male;sad_male;sad_female
+6;;sad_male;happy_female;happy_male;sad_female
