@@ -5,3 +5,4 @@
 5;;happy_female;happy_male;sad_male;sad_female
 6;;sad_male;happy_female;happy_male;sad_female
 7;;happy_male;sad_male;happy_female;sad_female
+8;;angry_male;angry_female;happy_female;sad_female;happy_male;scared_female;sad_male;scared_male
